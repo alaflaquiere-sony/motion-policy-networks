@@ -55,8 +55,6 @@ class Planner:
 
         :param mdl_file str: The path to the model checkpoint to be loaded
         """
-        """
-        """
         self.mdl = MotionPolicyNetwork.load_from_checkpoint(mdl_file).cuda().eval()
         self.fk_sampler = FrankaSampler("cuda:0")
 

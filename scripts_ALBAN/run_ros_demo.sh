@@ -1,4 +1,4 @@
-if [$ALREADYINSTALLED]
+if [ -z ${ALREADYINSTALLED+x}]
 then
     mkdir -p /root/catkin_ws/src
     cd /root/catkin_ws/src
